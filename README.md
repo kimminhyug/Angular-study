@@ -19,17 +19,23 @@ viewMdoel = model, properties를 관리하는 뷰의 백엔드 느낌, view와 v
     컴포넌트와 디렉티브, 파이프 등 기능이 연관된 구성요소를 하나로 묶어 관리하는 단위, Angular의 모듈 정의
 
 @NgModule({
-  declarations: [
+    declarations: [
+	
     모듈에 속하는 컴포넌트 삽입, 새로운컴포넌트는 반드시 추가해야 사용가능
     모듈에 속하는 파이프,
     모듈에 속하는 디렉티브
+	
   ],
   imports: [ 
+  
     해당 NgModule에서 사용할 모듈
     CardModule,
+	
   ],
   providers: [
+  
     삽입할 클래스 해당 NgModule에서 해당 클래스를 참조가 가능해짐
+	
 ],
   bootstrap: [렌더링시 최상위 컴포넌트]
 })
@@ -45,11 +51,14 @@ HttpClientModule	    @angular/common/http	서버와 HTTP 통신을 해야 할 �
 * 컴포넌트
 1. @Component
 컴포넌트는 무조건 NgModule 하나에 declarations 되야함. 안할시 에러발생.
-@Component({
-    selector:"태그",
-    templateUrl:"뷰(html등)",
-    styleUrls: ["css"]
-})
+
+	@Component({ 
+	
+		selector:"태그",
+		templateUrl:"뷰(html등)",
+		styleUrls: css[]
+	})
+
 
 2. class
 export class Card {}
