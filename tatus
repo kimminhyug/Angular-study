@@ -1,0 +1,55 @@
+[33mcommit ed80bad4555fa721dec75a000e5f50a8de6102fb[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: kimminhyug <42853144+kimminhyug@users.noreply.github.com>
+Date:   Thu Dec 2 13:33:17 2021 +0900
+
+    Update README.md
+    
+    readMe merge 정리
+
+[33mcommit e4cbfafcc61c3bb14fe5386ef84b7a8317410f2b[m
+Merge: 280ad81 4919e79
+Author: kimminhyug <42853144+kimminhyug@users.noreply.github.com>
+Date:   Wed Dec 1 22:30:22 2021 +0900
+
+    Merge pull request #1 from kimminhyug/master
+    
+    Master
+
+[33mcommit 4919e7905ca82c91aaa293594c47b3e00c8f707f[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: df74e4b 280ad81
+Author: unknown <kimminhyug@naver.com>
+Date:   Wed Dec 1 22:23:30 2021 +0900
+
+    README 추가
+
+[33mcommit df74e4b38e2701d3aa6473ccf38a99d1aec6520a[m
+Author: unknown <kimminhyug@naver.com>
+Date:   Wed Dec 1 22:13:20 2021 +0900
+
+    Angular study initialize, 1. counter 구현, material 맛보기(dashboard)
+
+[33mcommit 280ad81fc1cabb779d58ad0adfec1f83428f2990[m
+Author: kimminhyug <42853144+kimminhyug@users.noreply.github.com>
+Date:   Wed Dec 1 16:04:53 2021 +0900
+
+    Update README.md
+
+[33mcommit beb06151460e033cee14521afbd51d348e1b3cd5[m
+Author: kimminhyug <42853144+kimminhyug@users.noreply.github.com>
+Date:   Wed Dec 1 15:17:54 2021 +0900
+
+    Update README.md
+
+[33mcommit e62bbaf69445a3158ed6e2f87b9c1cc886959f01[m
+Author: kimminhyug <42853144+kimminhyug@users.noreply.github.com>
+Date:   Wed Dec 1 14:43:59 2021 +0900
+
+    Update README.md
+    
+    공부중
+
+[33mcommit 8f413bd724fd61cd829cdb3031b613739b40cae7[m
+Author: kimminhyug <42853144+kimminhyug@users.noreply.github.com>
+Date:   Wed Dec 1 13:28:50 2021 +0900
+
+    Initial commit
