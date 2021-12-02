@@ -50,3 +50,57 @@ viewMdoel = model, properties를 관리하는 뷰의 백엔드 느낌, view와 v
 
 ### - class
 	export class Card {}
+
+## 이벤트
+
+### 이벤트 객체 참조 방법
+
+	<div class="search">
+		<input (change)="onChange($event)">   //$event 객체 전달
+	</div>
+
+	onChange(e:Event): void {
+		console.log(e);
+	};
+
+이벤트 작업중 요류가 발생하였다.
+에러메세지 : Object is possibly 'null'.
+
+	getValue(e:Event): string {
+		return e.target.value;
+	}
+
+찾아보니 e.target 객체가 있을지 없을지 모르는데 값(value)을 접근하려 해서 그렇다고 한다.
+
+	getValue(e:Event): string {
+	return e.target?.value;
+	}
+
+optional Chain을 이용하려 하였지만, Property 'value' does not exist on type 'EventTarget' 라는 새로운 에러가 등장했다.
+에러 메세지를 보니 EventTaget 타입에서는 value가 없다는거 같다. 타입스크립트에서 타입이 안맞는다고 튕겨낸것으로 보인다
+
+Angular Guide에서는 e.target을 html element라고 알려줘야 정상 작동 한다고한다.
+결국 타입을 맞춤으로써 optional Chain을 이용할 필요가 없어졌다. 
+
+	getValue(e:Event): string {
+		return (e.target as HTMLInputElement).value;
+	}
+
+## 양방향 바인딩
+
+	@Input() counter: Counter = {
+		name:"첫번쨰",
+		count:0
+	};
+
+	@Output() counterChange = new EventEmitter<Counter>();
+
+	onIncrease(): void {
+		console.log(this);
+		this.counter.count = this.counter.count * 1;
+		this.counter.count += 1 ;
+		this.counterChange.emit(this.counter);
+	};
+  
+	<input id={{counter.name}} [(ngModel)]="counter.count">
+	<button (click)="onIncrease()">+</button>

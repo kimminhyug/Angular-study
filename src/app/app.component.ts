@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  parentItem = 'lamp';
+
+  currentItems = [{
+    sequence: 21,
+    name: 'phone'
+  }];
   title = 'angular-study';
 }

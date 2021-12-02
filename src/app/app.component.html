@@ -5,4 +5,7 @@
 <div class="content test" role="main">
     <router-outlet></router-outlet>
     <app-dashboardTest></app-dashboardTest>
+    <app-list-item [childItem]="parentItem"></app-list-item>
+    <app-list-item childItem="parentItem"></app-list-item>
+    <app-list childItem="parentItem"></app-list>
 </div>
